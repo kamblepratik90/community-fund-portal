@@ -1,0 +1,15 @@
+{
+  "appName": "समुदाय निधी पोर्टल",
+  "nav": {
+    "home": "मुख्यपृष्ठ",
+    "login": "लॉगिन",
+    "signup": "नोंदणी"
+  },
+  "auth": {
+    "emailPlaceholder": "ईमेल किंवा मोबाईल",
+    "passwordPlaceholder": "पासवर्ड",
+    "loginButton": "लॉगिन करा",
+    "forgotPassword": "पासवर्ड विसरलात?",
+    "signupTitle": "नोंदणी (मंजुरीसाठी विनंती)"
+  }
+}

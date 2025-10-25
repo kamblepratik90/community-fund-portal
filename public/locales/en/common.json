@@ -1,0 +1,15 @@
+{
+  "appName": "Community Fund Portal",
+  "nav": {
+    "home": "Home",
+    "login": "Login",
+    "signup": "Sign Up"
+  },
+  "auth": {
+    "emailPlaceholder": "Email or Mobile",
+    "passwordPlaceholder": "Password",
+    "loginButton": "Sign in",
+    "forgotPassword": "Forgot password?",
+    "signupTitle": "Sign Up (Request Approval)"
+  }
+}
