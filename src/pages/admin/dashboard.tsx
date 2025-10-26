@@ -105,9 +105,7 @@ export default function AdminDashboard() {
               </tbody>
             </table>
           )}
-          <Link href="/admin/pending-payments" className="text-blue-600 underline">
-            View all / Approve
-          </Link>
+          <Link href="/admin/pending-payments" className="text-blue-600 underline">Pending Payments</Link>
         </section>
       </div>
 
