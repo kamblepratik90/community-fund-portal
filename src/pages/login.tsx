@@ -1,5 +1,5 @@
 import { FormEvent, useState } from 'react';
-import { signIn } from 'next-auth/react';
+import { signIn, getSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
@@ -26,11 +26,17 @@ export default function Login() {
         email,
         password,
       });
-
       if (result?.error) {
         setError(result.error);
       } else {
-        router.push('/dashboard');
+        // Wait for session to update, then get latest session and redirect based on role
+        const session = await getSession();
+        const role = session?.user?.role;
+        if (role === 'ADMIN') {
+          router.push('/admin/dashboard');
+        } else {
+          router.push('/dashboard');
+        }
       }
     } catch (error) {
       setError('An unexpected error occurred');
